@@ -11,36 +11,86 @@ let myTeamArray = [];
 // INITIATE TEAM SERIES
 function askUser() {
     return inquirer.prompt([{
-            type: "input",
-            message: "Name your team",
-            name: "teamName",
-        }, ])
-        .then(function(data) {
+        type: "input",
+        message: "Name your team",
+        name: "teamName",
+    },])
+        .then(function (data) {
             let teamName = data.teamName;
             myTeamArray.push(teamName);
             addTeamManager();
         });
 }
-// Define Manager
+// MANAGER
 function addTeamManager() {
     inquirer.prompt([{
+        type: "input",
+        name: "name",
+        message: "What is the Manager's name?",
+    },
+    {
+        type: "input",
+        name: "id",
+        message: "What is the manager's employee ID?",
+    },
+    {
+        type: "input",
+        name: "email",
+        message: "What is the manager's email address?",
+    },
+    {
+        type: "number",
+        name: "officeNum",
+        message: "What is the office phone number?",
+    },
+    ])
+
+
+
+    // ENGINEER
+    function addEngineer() {
+        inquirer.prompt([{
+            type: "input",
+            name: "name",
+            message: "What is the engineer's name?",
+        },
+        {
+            type: "input",
+            name: "id",
+            message: "What is the engineer's employee ID?",
+        },
+        {
+            type: "input",
+            name: "email",
+            message: "What is the engineer's email address?",
+        },
+        {
+            type: "input",
+            name: "github",
+            message: "What is the engineer's github handle?",
+        },
+        ])
+
+        // INTERN
+        function addIntern() {
+            inquirer.prompt([{
                 type: "input",
                 name: "name",
-                message: "What is the Manager's name?",
+                message: "What is the intern's name?",
             },
             {
                 type: "input",
                 name: "id",
-                message: "What is the manager's employee ID?",
+                message: "What is the intern's employee ID?",
             },
             {
                 type: "input",
                 name: "email",
-                message: "What is the manager's email address?",
+                message: "What is the intern's email address?",
             },
             {
-                type: "number",
-                name: "officeNum",
-                message: "What is the office phone number?",
+                type: "input",
+                name: "school",
+                message: "What school does the intern attend?",
             },
-        ])
+            ])

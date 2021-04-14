@@ -59,4 +59,5 @@ A command line application to dynamically create a webpage of key employee info 
 #### Additional Documents & Links       
 - [Jest Documentation](https://jestjs.io/docs/getting-started)
 - [Jest Tutorials](https://www.valentinog.com/blog/jest/)
+- [W3 Schools](https://www.w3schools.com/jsref/jsref_class_super.asp)
 

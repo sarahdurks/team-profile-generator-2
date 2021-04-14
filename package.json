@@ -1,18 +1,18 @@
 {
-    "name": "team-profile-generator-2",
-    "author": "Sarah Durkin",
-    "license": "MIT",
-    "version": "1.0.0",
-    "description": "A tool to create a team profile for all projects from the command line.",
-    "dependencies": {
-      "axios": "^0.21.1",
-      "inquirer": "^6.3.1",
-      "utils": "^0.3.1"
-    },
-    "devDependencies": {
-      "jest": "^26.6.3"
-    },
-    "scripts": {
-      "test": "jest"
-    }
+  "name": "team-profile-generator-2",
+  "author": "Sarah Durkin",
+  "license": "MIT",
+  "version": "1.0.0",
+  "description": "A tool to create a team profile for all projects from the command line.",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "inquirer": "^6.5.2",
+    "utils": "^0.3.1"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3"
+  },
+  "scripts": {
+    "test": "jest"
   }
+}
