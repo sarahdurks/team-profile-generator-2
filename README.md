@@ -15,8 +15,11 @@ A command line application to dynamically create a webpage of key employee info 
 
 # Work Completed
 
-
-# Pending
+- [x] A command line application is set up to help a user define a working team, composed of several roles: Manager, engineer, and intern
+- [x] An inquirer question series helps build employee profile information 
+- [x] The information is brought in to a dynamically generated webpage that features the above information, as defined by user inputs
+- [x] Information a user inputs like email and github profile links is made actionable - opening the website and/or the user default mail client
+- [x] Jest tests written to validate the employee definitions
 
 
 # Project Visuals :sunglasses:
