@@ -6,7 +6,7 @@
   "description": "A tool to create a team profile for all projects from the command line.",
   "dependencies": {
     "axios": "^0.21.1",
-    "inquirer": "^6.5.2",
+    "inquirer": "^6.3.1",
     "utils": "^0.3.1"
   },
   "devDependencies": {

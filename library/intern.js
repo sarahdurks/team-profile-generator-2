@@ -1,3 +1,4 @@
+const Employee = require("./employee");
 
 // INTERN
 class Intern extends Employee {
@@ -16,3 +17,5 @@ class Intern extends Employee {
     }
 }
 module.exports = Intern
+
+ 
