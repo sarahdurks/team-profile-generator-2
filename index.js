@@ -52,11 +52,11 @@ function addManager() {
             const officeNum = data.officeNum;
             const teammate = new Manager(name, id, email, officeNum); // follow up on ID
             myTeam.push(teammate);
-            addTeammates();
+            addMember();
         });
 }
 // BUILD TEAM
-function addTeammates() {
+function addMember() {
     inquirer.prompt([{
             type: "list",
             message: "Are there more team members to add?",
@@ -108,7 +108,7 @@ function addEngineer() {
             let github = data.github;
             let teammate = new Engineer(name, id, email, github);
             myTeam.push(teammate);
-            addTeammates();
+            addMember();
         });
 }
 // INTERN
@@ -142,7 +142,7 @@ function addIntern() {
             let school = data.school;
             let teammate = new Intern(name, id, email, school);
             myTeam.push(teammate);
-            addTeammates();
+            addMember();
         });
 }
 // CREATE PAGE
@@ -177,23 +177,23 @@ function buildMyTeam() {
                                 <div class="card-content">
                                     <p><strong>EMAIL:</strong> <a href="mailto:${myTeam[i].email}">${myTeam[i].email}</a></p>
                                     <p><strong>ID:</strong> ${myTeam[i].id}</p>`;
-        /* if manager - office # */
+        // Add number if Manager
         if (myTeam[i].officeNum) {
             object += `<p><strong>OFFICE: </strong> ${myTeam[i].officeNum}</p>`;
         }
-        /* if eng - github */
+        // Add Github if Engineer
         if (myTeam[i].github) {
             object += `<p><strong>GITHUB: </strong> <a href="https://github.com/${myTeam[i].github}" target="_blank">${myTeam[i].github}</a></p>`;
         }
-        /* if intern - school */
+        // Add School if Intern
         if (myTeam[i].school) {
             object += `<p><strong>SCHOOL: </strong> ${myTeam[i].school}</p>`;
         }
-        //end card
+        // End
         object += `</div></div>`;
         pageArray.push(object);
     }
-    //put all together
+    // Compose
     let endPage = `</div></body></html>`;
     pageArray.push(endPage);
     fs.writeFile(`./dist/${myTeam[0]}.html`, pageArray.join(""), function(err) {});
