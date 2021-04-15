@@ -149,7 +149,7 @@ function addIntern() {
 function buildMyTeam() {
     console.log("Team ready! Check the 'dist' folder for your page.");
     let pageArray = [];
-    let pageHTML = `<!DOCTYPE html>
+    let pageHead = `<!DOCTYPE html>
                     <html lang="en">
                     <head>
                     <meta charset="UTF-8">
@@ -160,12 +160,12 @@ function buildMyTeam() {
                     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous" />
                     <link rel="preconnect" href="https://fonts.gstatic.com">
                     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-                    <link rel="stylesheet" href="./css/style.css"/>
+                    <link rel="stylesheet" href=".dist/css/style.css"/>
                     </head>
                     <body>
                         <div class="header"><h1>${myTeam[0]}</h1></div>
                         <div class="container">`;
-    pageArray.push(pageHTML);
+    pageArray.push(pageHead);
     for (let i = 1; i < myTeam.length; i++) {
         let object = `
                             <div class="card">
