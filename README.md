@@ -27,6 +27,13 @@ A command line application to dynamically create a webpage of key employee info 
 
 ### Video of Functionality
 
+<img width="1156" alt="Screen Shot 2021-04-14 at 8 17 31 PM" src="https://user-images.githubusercontent.com/77648727/114809128-7926ba80-9d5e-11eb-9638-f578c0d343e2.png">
+
+[See Demo of Page Generation] (https://drive.google.com/file/d/1F38szSfuKIKV9lyb8Uqizz9PSe-vUCvd/view?usp=sharing)
+
+<img width="444" alt="Screen Shot 2021-04-14 at 7 50 10 PM" src="https://user-images.githubusercontent.com/77648727/114809059-4d0b3980-9d5e-11eb-94ca-55f61d5213ad.png">
+
+[See Passing Jest Tests](https://drive.google.com/file/d/172prWPjr0Ui6_IN4zvcLORDhn1EoUy-D/view?usp=sharing)
 
 #### User Story 📖
 
